@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 
 
 public class calc extends Application {
-    Label Label1;
-    Label Label2;
+    Label label1;
+    Label label2;
     Button button0;
     Button button1;
     Button button2;
@@ -45,8 +45,8 @@ public class calc extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         stage.setTitle("bb calculator");
-        Label1 = new Label("");
-        Label2 = new Label("");
+        label1 = new Label("");
+        label2 = new Label("");
 
         VBox root = new VBox();
         HBox firstRow = new HBox();
@@ -77,10 +77,10 @@ public class calc extends Application {
         button0.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "0");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "0");
                 }else{
-                    Label1.setText("0");
+                    label1.setText("0");
                     first = true;
                     result = false;
                 }
@@ -94,10 +94,10 @@ public class calc extends Application {
         button1.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "1");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "1");
                 }else{
-                    Label1.setText("1");
+                    label1.setText("1");
                     first = true;
                     result = false;
                 }
@@ -111,10 +111,10 @@ public class calc extends Application {
         button2.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "2");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "2");
                 }else{
-                    Label1.setText("2");
+                    label1.setText("2");
                     first = true;
                     result = false;
                 }
@@ -128,10 +128,10 @@ public class calc extends Application {
         button3.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "3");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "3");
                 }else{
-                    Label1.setText("3");
+                    label1.setText("3");
                     first = true;
                     result = false;
                 }
@@ -145,10 +145,10 @@ public class calc extends Application {
         button4.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "4");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "4");
                 }else{
-                    Label1.setText("4");
+                    label1.setText("4");
                     first = true;
                     result = false;
                 }
@@ -162,10 +162,10 @@ public class calc extends Application {
         button5.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "5");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "5");
                 }else{
-                    Label1.setText("5");
+                    label1.setText("5");
                     first = true;
                     result = false;
                 }
@@ -179,10 +179,10 @@ public class calc extends Application {
         button6.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "6");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "6");
                 }else{
-                    Label1.setText("6");
+                    label1.setText("6");
                     first = true;
                     result = false;
                 }
@@ -196,10 +196,10 @@ public class calc extends Application {
         button7.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "7");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "7");
                 }else{
-                    Label1.setText("7");
+                    label1.setText("7");
                     first = true;
                     result = false;
                 }
@@ -213,10 +213,10 @@ public class calc extends Application {
         button8.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "8");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "8");
                 }else{
-                    Label1.setText("8");
+                    label1.setText("8");
                     first = true;
                     result = false;
                 }
@@ -230,10 +230,10 @@ public class calc extends Application {
         button9.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
                 if(!result) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + "9");
+                    label2 = label1;
+                    label1.setText(label2.getText() + "9");
                 }else{
-                    Label1.setText("9");
+                    label1.setText("9");
                     first = true;
                     result = false;
                 }
@@ -246,32 +246,32 @@ public class calc extends Application {
         });
         plus.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + " + ");
+                    label2 = label1;
+                    label1.setText(label2.getText() + " + ");
                     first = false;
                     opperator = "+";
             }
         });
         minus.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                Label2 = Label1;
-                Label1.setText(Label2.getText() + " - ");
+                label2 = label1;
+                label1.setText(label2.getText() + " - ");
                 first = false;
                 opperator = "-";
             }
         });
         mult.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + " * ");
+                    label2 = label1;
+                    label1.setText(label2.getText() + " * ");
                     first = false;
                 opperator = "*";
             }
         });
         div.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                    Label2 = Label1;
-                    Label1.setText(Label2.getText() + " / ");
+                    label2 = label1;
+                    label1.setText(label2.getText() + " / ");
                     first = false;
                 opperator = "/";
             }
@@ -289,7 +289,7 @@ public class calc extends Application {
                 }else if(opperator == "/"){
                     sum = firstOpperand / secondOpperand;
                 }
-                Label1.setText(""+sum);
+                label1.setText(""+sum);
                 firstOpperand = 0;
                 secondOpperand = 0;
                 sum = 0;
@@ -297,7 +297,7 @@ public class calc extends Application {
         });
         clear.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                Label1.setText("   ");
+                label1.setText("   ");
                 first = true;
                 sum = 0;
                 firstOpperand = 0;
@@ -308,7 +308,7 @@ public class calc extends Application {
         secondRow.getChildren().addAll(button4,button5,button6,mult);
         thirdRow.getChildren().addAll(button1,button2,button3,minus);
         fourthRow.getChildren().addAll(clear, button0,equals,plus);
-        root.getChildren().addAll(Label1, firstRow,secondRow,thirdRow,fourthRow);
+        root.getChildren().addAll(label1, firstRow,secondRow,thirdRow,fourthRow);
         stage.show();
     }
 

@@ -11,7 +11,7 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 
-public class calc extends Application {
+public class Calc extends Application {
     Label label1;
     Label label2;
     Button button0;
