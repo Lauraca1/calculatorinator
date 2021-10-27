@@ -280,13 +280,13 @@ public class Calc extends Application {
             public void handle(ActionEvent actionEvent) {
                 result = true;
                 first = true;
-                if(opperator == "+"){
+                if(opperator.equals("+")){
                     sum = firstOpperand + secondOpperand;
-                }else if(opperator == "-"){
+                }else if(opperator.equals("-")){
                     sum = firstOpperand - secondOpperand;
-                }else if(opperator == "*"){
+                }else if(opperator.equals("*")){
                     sum = firstOpperand * secondOpperand;
-                }else if(opperator == "/"){
+                }else if(opperator.equals("/")){
                     sum = firstOpperand / secondOpperand;
                 }
                 label1.setText(""+sum);
