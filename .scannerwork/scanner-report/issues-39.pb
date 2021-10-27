@@ -1,2 +1,0 @@
-U
-javaS1117:Rename "label2" which hides the field declared at line 16. 2.. 

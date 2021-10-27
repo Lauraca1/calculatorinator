@@ -41,19 +41,19 @@ public class Calc extends Application {
     public static void main(String[] args){
         launch();
     }
-    public void buttonClicked(boolean res, Label l1, boolean first, double fO, double sO, int num){
-        if(!res) {
-            this.label2 = l1;
+    public void buttonClicked(int num){
+        if(!this.result) {
+            this.label2 = this.label1;
             this.label1.setText(this.label2.getText() + Integer.toString(num));
         }else{
             label1.setText(Integer.toString(num));
             this.first = true;
             this.result = false;
         }
-        if(first){
-            this.firstOpperand = (fO * 10) + num;
+        if(this.first){
+            this.firstOpperand = (this.firstOpperand * 10) + num;
         }else{
-            this.secondOpperand = (sO * 10) + num;
+            this.secondOpperand = (this.secondOpperand * 10) + num;
         }
     }
 
@@ -91,52 +91,52 @@ public class Calc extends Application {
 
         button0.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 0);
+                buttonClicked(0);
             }
         });
         button1.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 1);
+                buttonClicked(1);
             }
         });
         button2.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 2);
+                buttonClicked(2);
             }
         });
         button3.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 3);
+                buttonClicked(3);
             }
         });
         button4.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 4);
+                buttonClicked(4);
             }
         });
         button5.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 5);
+                buttonClicked(5);
             }
         });
         button6.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 6);
+                buttonClicked(6);
             }
         });
         button7.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 7);
+                buttonClicked(7);
             }
         });
         button8.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 8);
+                buttonClicked(8);
             }
         });
         button9.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 9);
+                buttonClicked(9);
             }
         });
         plus.setOnAction(new EventHandler<ActionEvent>() {

@@ -43,8 +43,8 @@ public class Calc extends Application {
     }
     public void buttonClicked(boolean res, Label l1, boolean first, double fO, double sO, int num){
         if(!res) {
-            Label label2 = l1;
-            this.label1.setText(label2.getText() + Integer.toString(num) );
+            this.label2 = l1;
+            this.label1.setText(this.label2.getText() + Integer.toString(num));
         }else{
             label1.setText(Integer.toString(num));
             this.first = true;
