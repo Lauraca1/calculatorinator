@@ -41,6 +41,21 @@ public class Calc extends Application {
     public static void main(String[] args){
         launch();
     }
+    public void buttonClicked(boolean res, Label l1, boolean first, double fO, double sO, int num){
+        if(!res) {
+            Label label2 = l1;
+            this.label1.setText(label2.getText() + Integer.toString(num) );
+        }else{
+            label1.setText(Integer.toString(num));
+            this.first = true;
+            this.result = false;
+        }
+        if(first){
+            this.firstOpperand = (fO * 10) + num;
+        }else{
+            this.secondOpperand = (sO * 10) + num;
+        }
+    }
 
     @Override
     public void start(Stage stage) throws Exception {
@@ -76,19 +91,7 @@ public class Calc extends Application {
 
         button0.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "0");
-                }else{
-                    label1.setText("0");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = firstOpperand * 10;
-                }else{
-                    secondOpperand = secondOpperand * 10;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 0);
             }
         });
         button1.setOnAction(new EventHandler<ActionEvent>() {

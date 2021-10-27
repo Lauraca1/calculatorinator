@@ -1,1 +1,1 @@
-' 2javaX½hr4src/main/java/com/example/calculatorinator/calc.java
+' 2javaX½hr4src/main/java/com/example/calculatorinator/Calc.java
