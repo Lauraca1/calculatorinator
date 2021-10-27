@@ -96,155 +96,47 @@ public class Calc extends Application {
         });
         button1.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "1");
-                }else{
-                    label1.setText("1");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 1;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 1;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 1);
             }
         });
         button2.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "2");
-                }else{
-                    label1.setText("2");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 2;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 2;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 2);
             }
         });
         button3.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "3");
-                }else{
-                    label1.setText("3");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 3;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 3;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 3);
             }
         });
         button4.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "4");
-                }else{
-                    label1.setText("4");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 4;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 4;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 4);
             }
         });
         button5.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "5");
-                }else{
-                    label1.setText("5");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 5;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 5;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 5);
             }
         });
         button6.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "6");
-                }else{
-                    label1.setText("6");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 6;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 6;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 6);
             }
         });
         button7.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "7");
-                }else{
-                    label1.setText("7");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 7;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 7;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 7);
             }
         });
         button8.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "8");
-                }else{
-                    label1.setText("8");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 8;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 8;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 8);
             }
         });
         button9.setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent actionEvent) {
-                if(!result) {
-                    label2 = label1;
-                    label1.setText(label2.getText() + "9");
-                }else{
-                    label1.setText("9");
-                    first = true;
-                    result = false;
-                }
-                if(first){
-                    firstOpperand = (firstOpperand * 10) + 9;
-                }else{
-                    secondOpperand = (secondOpperand * 10) + 9;
-                }
+                buttonClicked(result, label1, first, firstOpperand, secondOpperand, 9);
             }
         });
         plus.setOnAction(new EventHandler<ActionEvent>() {
