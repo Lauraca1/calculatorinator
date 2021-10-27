@@ -3,5 +3,5 @@ projectKey=Lauraca1_calculatorinator
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.24335
 dashboardUrl=https://sonarcloud.io/dashboard?id=Lauraca1_calculatorinator
-ceTaskId=AXzBtWucExg_r8_hu26-
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXzBtWucExg_r8_hu26-
+ceTaskId=AXzBuEeAv8OaYBwJnCiz
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXzBuEeAv8OaYBwJnCiz
